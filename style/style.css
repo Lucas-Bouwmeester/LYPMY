@@ -1,10 +1,89 @@
 body {
     font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
 
+.before-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-bg {
+    background-image: url('../images/login-background.png');
+}
+.signup-bg {
+    background-image: url('../images/signup-background.png');
+}
+
+.before-background-container {
+    aspect-ratio: 10 / 16;
+    width: min(calc(100vw - 40px), calc((100vh - 40px) * (12 / 16)));
+    height: min(calc(100vh - 12vh), calc((100vw - 40px) * (16 / 10)));
+    position: relative;
+    border: 5px solid black;
+    background-color: white;
+}
+
+#login-section h2, #signup-section h2 {
+    text-align: center;
+    font-size: clamp(0.1em, 5.4vh, 5rem);
+}
+
+#login-section form, #signup-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#login-section label, #signup-section label {
+    border: 2px solid black;
+    padding: 5px;
+    font-size : clamp(0.1em, 1.9vh, 5rem);
+    min-width: 65%;;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#login-section input, #signup-section input {
+    font-size : clamp(0.1em, 1.9vh, 5rem);
+}
+
+#login-section button, #signup-section button {
+    font-size : clamp(0.1em, 1.9vh, 5rem);
+    padding: 5px;
+    min-width: 50%;
+    background: black;
+    color: white;
+}
+
+#login-section p, #signup-section p {
+    text-align: center; 
+}
+
+#login-section .switch-button, #signup-section .switch-button {
+    font-size: clamp(0.1rem, 2vh, 2rem); 
+    display: inline-block;
+    text-decoration: underline;
 }
 
 .homepage-container {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -17,10 +96,11 @@ body {
 
 .homepage-camera-container {
     aspect-ratio: 16 / 9;
-    width: min(calc(100vw - 20px), calc((100vh - 20px) * (4 / 3)));
-    height: min(calc(100vh - 20px), calc((100vw - 20px) * (3 / 4)));
+    width: min(calc(100vw - 40px), calc((100vh - 40px) * (4 / 3)));
+    height: min(calc(100vh - 40px), calc((100vw - 40px) * (3 / 4)));
     position: relative;
 }
+
 .homepage-camera-button {
     position: absolute;
     height: 7%;
