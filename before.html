@@ -12,6 +12,7 @@
             <div id="login-section" style="display: block;">
                 <h2>Login</h2>
                 <form action="./db/accounthandle.php" method="POST">
+                    <!-- The login backend needs to be able to let the user login and get send to the homepage after the login succeeds -->
                     <label>Username: <input type="text" name="name"></label>
                     <label>Password: <input type="password" name="pass"></label>
                     <button type="submit" name="method" value="login">Login</button>
@@ -22,6 +23,7 @@
             <div id="signup-section" style="display: none;">
                 <h2>Sign Up</h2>
                 <form action="./db/accounthandle.php" method="POST">
+                    <!-- After the signup, the user gets send back to the login form. With the new account info, a user should be able to log in with the new account -->
                     <label>Username: <input type="text" name="name"></label>
                     <label>Display Name: <input type="text" name="display"></label>
                     <label>Password: <input type="password" name="pass"></label>
