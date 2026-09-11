@@ -28,6 +28,8 @@
                 <h3>[11-09-2026]</h3>
                 <p>Added login & signup (backend)</p>
                 <p>Changed "index.html" > "home.php"</p>
+                <p>Added wireframe Upload (with cool static effect)</p>
+
             </div>
 
             <div class="homepage-camera-top" style="color: red;">Test Text (will get deleted soon: <b><?= $_SESSION['user'] ?></b></div>
