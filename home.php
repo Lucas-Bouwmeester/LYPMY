@@ -25,6 +25,8 @@
                 <p>Reworked cool static effect (a little)</p>
                 <p>Added homepage background</p>
                 <p>Added account (backend)</p>
+                <p>Added account (frontend)</p>
+                <p>Fixed typo (setings -> settings lmao)</p>
                 <h3>[11-09-2026]</h3>
                 <p>Added login & signup (backend)</p>
                 <p>Changed "index.html" -> "home.php"</p>
@@ -66,7 +68,7 @@
 
             <a href="settings.php" class="homepage-camera-button-upload-link">
                 <div class="homepage-camera-button-settings">
-                    <div class="homepage-camera-button-settings-title">Setings</div>
+                    <div class="homepage-camera-button-settings-title">Settings</div>
                 </div>
             </a>
 
