@@ -1,8 +1,6 @@
 <?php
    require './db/config.php';
    require './db/boot.php';
-
-   var_dump($_SESSION);
 ?>
 
 <form action="./db/accounthandle.php" method="POST">
