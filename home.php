@@ -21,10 +21,12 @@
                 <h1>Patchnotes</h1>
                 <h3>[18-09-2026]</h3>
                 <p>Fixed homepage responsiveness text </p>
+                <p>Added upload (Frontend)</p>
+                <p>Reworked cool static effect (a little)</p>
                 <h3>[11-09-2026]</h3>
                 <p>Added login & signup (backend)</p>
                 <p>Changed "index.html" -> "home.php"</p>
-                <p>Added wireframe Upload (with cool static effect)</p>
+                <p>Added wireframe (with cool static effect)</p>
                 <h3>[10-09-2026]</h3>
                 <p>Added login & signup (frontend)</p>
                 <h3>[09-09-2026]</h3>
@@ -59,7 +61,7 @@
             <div class="homepage-camera-button-settings">
                 <div class="homepage-camera-button-settings-title">Setings</div>
             </div>
-            
+
             <a href="upload.php" class="homepage-camera-button-upload-link">
                 <div class="homepage-camera-button-upload">
                     <div class="homepage-camera-button-upload-title">Upload</div>
