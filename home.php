@@ -48,7 +48,7 @@
             <a href="groups.php" class="homepage-camera-button-upload-link">
                 <div class="homepage-camera-button-groups">
                     <div class="homepage-camera-button-groups-title">Groups</div>
-                    <button onclick="homepageAnnouncements.style.display = 'block'" class="homepage-camera-button-groups-red-button">
+                     <button onclick="event.preventDefault(); event.stopPropagation(); document.getElementById('homepageAnnouncements').style.display = 'block'" class="homepage-camera-button-groups-red-button">
                         <div style="color: white; font-size: clamp(0.01em, 3.5cqmin, 1.8rem);">2</div>
                         <!-- The number needs later to be connected to the announcements. The amount of announcements you get is the amount that needs to be shown! -->
                     </button>
