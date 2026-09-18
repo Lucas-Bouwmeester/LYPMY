@@ -19,17 +19,18 @@
             <button class="homepage-camera-button" onclick="toggleHomepageButton(this)">Patchnotes</button>
             <div id="homepageButton">
                 <h1>Patchnotes</h1>
+                <h3>[18-09-2026]</h3>
+                <p>Fixed homepage responsiveness text </p>
+                <h3>[11-09-2026]</h3>
+                <p>Added login & signup (backend)</p>
+                <p>Changed "index.html" -> "home.php"</p>
+                <p>Added wireframe Upload (with cool static effect)</p>
+                <h3>[10-09-2026]</h3>
+                <p>Added login & signup (frontend)</p>
                 <h3>[09-09-2026]</h3>
                 <p>Added homepage</p>
                 <p>Added announcements (frontend)</p>
                 <p>Added patchnotes</p>
-                <h3>[10-09-2026]</h3>
-                <p>Added login & signup (frontend)</p>
-                <h3>[11-09-2026]</h3>
-                <p>Added login & signup (backend)</p>
-                <p>Changed "index.html" > "home.php"</p>
-                <p>Added wireframe Upload (with cool static effect)</p>
-
             </div>
 
             <div class="homepage-camera-top" style="color: red;">Test Text (will get deleted soon: <b><?= $_SESSION['user'] ?></b></div>
@@ -41,7 +42,7 @@
             <div class="homepage-camera-button-groups">
                 <div class="homepage-camera-button-groups-title">Groups</div>
                 <button onclick="homepageAnnouncements.style.display = 'block'" class="homepage-camera-button-groups-red-button">
-                    <div style="color: white; font-size: clamp(1em, 2.5vw, 2rem);;">2</div>
+                    <div style="color: white; font-size: clamp(0.01em, 3.5cqmin, 1.8rem);">2</div>
                     <!-- The number needs later to be connected to the announcements. The amount of announcements you get is the amount that needs to be shown! -->
                 </button>
 
@@ -58,9 +59,12 @@
             <div class="homepage-camera-button-settings">
                 <div class="homepage-camera-button-settings-title">Setings</div>
             </div>
-            <div class="homepage-camera-button-upload">
-                <div class="homepage-camera-button-upload-title">Upload</div>
-            </div>
+            
+            <a href="upload.php" class="homepage-camera-button-upload-link">
+                <div class="homepage-camera-button-upload">
+                    <div class="homepage-camera-button-upload-title">Upload</div>
+                </div>
+            </a>
 
             <div class="homepage-camera-outer-lense">
                 <div class="homepage-camera-inner-lense"> 

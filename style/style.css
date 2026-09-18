@@ -109,7 +109,7 @@ body {
     left: 9%;
     background-color: black;
     color: white;
-    font-size : clamp(0.2em, 1.7vw, 1rem);
+    font-size: clamp(0.01em, 1.75cqmin, 1.6rem);
     border-bottom: 2px solid white;
     border-radius: 20px 20px 0 0;
     transition: all 0.3s ease-in-out;
@@ -151,7 +151,8 @@ body {
     z-index: 19;
     border-radius: 40px;
     text-align: center;
-    font-size : clamp(0.1em, 1.8vw, 1rem);
+    font-size: clamp(0.01em, 2cqmin, 1.8rem);
+    padding: 7px;
 
     overflow: auto; 
 }
@@ -186,7 +187,7 @@ body {
     left: 28%;
     transform: translateY(-50%);
     color: white;
-    font-size : clamp(0.1em, 3.4vw, 2rem);
+    font-size: clamp(0.01em, 4cqmin, 2rem);
 }
 
 .homepage-camera-button-groups {
@@ -208,7 +209,7 @@ body {
     left: 38%;
     transform: translateY(-50%);
     color: white;
-    font-size : clamp(0.1em, 3.4vw, 2rem);
+    font-size: clamp(0.01em, 4cqmin, 2rem);
 }
 
 .homepage-camera-button-groups-red-button {
@@ -229,7 +230,7 @@ body {
     outline: 4px double white;
     background-color: black;
     color:  white;
-    margin: 10px;
+    margin: 5px;
     width: 80%;
     height: 180%;
     display: none;
@@ -244,8 +245,8 @@ body {
 #homepageAnnouncements h2 {
     position: relative;
     left: 28%;
-    top: 2%;
-    font-size : clamp(1em, 3.2vw, 1.75rem);
+    top: 4%;
+    font-size: clamp(0.01em, 3.5cqmin, 1.8rem);
     text-align: center;
     width: 60%;
 }
@@ -261,8 +262,9 @@ body {
     background-color: red;
     border: outset 1px white !important;
     color: white;
-    font-size : clamp(0.4em, 1.2vw, 0.7rem);
+    font-size: clamp(0.01em, 1.5cqmin, 1.65rem);
     cursor:  pointer;
+    text-align: center;
 }
 
 .homepage-camera-button-settings {
@@ -283,7 +285,7 @@ body {
     left: 28%;
     transform: translateY(-50%);
     color: white;
-    font-size : clamp(0.1em, 3.4vw, 2rem);
+     font-size: clamp(0.01em, 4cqmin, 2rem);
 }
 
 .homepage-camera-button-upload {
@@ -305,7 +307,7 @@ body {
     left: 38%;
     transform: translateY(-50%);
     color: white;
-    font-size : clamp(0.1em, 3.4vw, 2rem);
+    font-size: clamp(0.01em, 4cqmin, 2rem);
 }
 
 .homepage-camera-outer-lense {
@@ -335,7 +337,7 @@ body {
     position: relative;
     top: 38%;
     text-align: center;
-    font-size : clamp(1.5em, 7.5vw, 4rem);
+    font-size: clamp(0.01em, 6cqmin, 2.8rem);
 }
 
 .black-container {
