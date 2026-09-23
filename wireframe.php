@@ -15,8 +15,6 @@
             <rect width="100%" height="100%" filter="url(#staticNoise)" fill="white" />
         </svg>  
 
-        <div class="title">Placeholder</div>
-
         <div class="border-container">
             <div class="REC-container">
                <div class="REC-indicator">REC</div>
