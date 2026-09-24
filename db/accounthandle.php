@@ -10,11 +10,11 @@
 		$_SESSION['accountmsg'] = 'Fill in all fields';
 	} else if ($_POST['method'] == 'update') {
 
-		sql(false, 'UPDATE user SET user = :USER, display = :DIS, pass = :PASS WHERE user = :OLD', [
+		sql(false, 'UPDATE user SET user = :USER, display = :DIS, pass = :PASS WHERE userID = :ID', [
 			'USER' => $_POST['name'] ?? $_SESSION['user']['user'],
 			'DIS' => $_POST['display'] ?? $_SESSION['user']['display'],
 			'PASS' => sha1($_POST['pass']) ?? $_SESSION['user']['pass'],
-			'OLD' => $_SESSION['user']['user']
+			'ID' => $_SESSION['user']['userID']
 		]);
 
 		$res = sql(false, 'SELECT * FROM user WHERE user = :USER AND pass = :PASS', [

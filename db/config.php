@@ -1,6 +1,6 @@
 <?php
 	function sql($mode, $query, $flags=[]) {
-		$pdo = new PDO('sqlite:./LYPMY.db');
+		$pdo = new PDO('sqlite:' . $_SERVER['DOCUMENT_ROOT'] . '/db/LYPMY.db');
 		$stmt = $pdo->prepare($query);
 		$stmt->execute($flags);
 
