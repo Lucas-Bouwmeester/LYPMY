@@ -1,6 +1,10 @@
 <?php
     require './db/config.php';
     require './db/boot.php';
+
+    $invites = sql(true, 'SELECT * FROM invite WHERE user = :USER AND accept = FALSE;', [
+        'USER' => $_SESSION['user']['user']
+    ]);
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +41,7 @@
                 <p>Added patchnotes</p>
             </div>
 
-            <div class="homepage-camera-top" style="color: red;">Test Text (will get deleted soon: <b><?= $_SESSION['user'] ?></b></div>
+            <div class="homepage-camera-top" style="color: red;">Test Text (will get deleted soon: <b><?= $_SESSION['user']['user'] ?></b></div>
 
             <a href="accsettings.php" class="homepage-camera-button-upload-link">
                 <div class="homepage-camera-button-account">
@@ -56,6 +60,14 @@
                     <div id="homepageAnnouncements">
                         <button class="homepageAnnouncements-close" onclick="homepageAnnouncements.style.display = 'none'" style="width: 14%; height: 10%;">+</button>
                         <h2>Announcements</h2>
+
+                        <?php foreach ($invites as $invite) { ?>
+                            <div>
+                                <h3>Invite: <?= $invite['by'] ?></h3>
+                                <button onclick="window.location = 'db/grouphandle.php?accept=<?= $invite['by'] ?>'">Accept</button>
+                                <button onclick="window.location = 'db/grouphandle.php?decline=<?= $invite['by'] ?>'">Decline</button>
+                            </div><br>
+                        <?php } ?>
                         <!-- In announcements their needs to be the following 3 possibilites that can happen
                         1. They get a groupchat invite, which they can accept or decline
                         2. They get an announcement that they have been removed from [groupchatname] 
@@ -66,7 +78,7 @@
 
             <a href="settings.php" class="homepage-camera-button-upload-link">
                 <div class="homepage-camera-button-settings">
-                    <div class="homepage-camera-button-settings-title">Settings</div>
+                    <div class="homepage-camera-button-settings-title">Setings</div>
                 </div>
             </a>
 

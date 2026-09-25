@@ -39,13 +39,3 @@
 <br><br>
 <button onclick="window.location = './maekgroup.php'">Maek Group</button>
 <button onclick="window.location = './home.php'">Bak</button>
-
-<!-- Move this exact thing without the <hr> somewhere else cro, the homepage didn't have space -->
-<hr>
-<?php foreach ($invites as $invite) { ?>
-    <div>
-        <h3>Invite: <?= $invite['by'] ?></h3>
-        <button onclick="window.location = 'db/grouphandle.php?accept=<?= $invite['by'] ?>'">Accept</button>
-        <button onclick="window.location = 'db/grouphandle.php?decline=<?= $invite['by'] ?>'">Decline</button>
-    </div><br>
-<?php } ?>

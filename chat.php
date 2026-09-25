@@ -17,6 +17,10 @@
         exit();
     }
 
+    $members = sql(true, 'SELECT * FROM invite WHERE by = :BY;', [
+        'BY' => $data['name']
+    ]);
+
     // var_dump($invites);
 ?>
 

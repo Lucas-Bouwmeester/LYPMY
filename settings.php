@@ -18,7 +18,7 @@
     	'ID' => $_SESSION['user']['userID']
 	]);
 
-	$groups = array_filter(array_merge($groups, $owned)); // we cry
+	$groups = array_filter(array_merge($groups ?? [], $owned ?? [])); // we cry
 
 	if (isset($_GET['target'])) {
 		$target = $groups[(int)$_GET['target']];
@@ -67,6 +67,12 @@
 				}
 			?>
 		</ul>
+
+		<form action="./db/grouphandle.php" method="POST">
+			<input type="hidden" name="group" value="<?= $target['name'] ?>">
+			<input type="type" name="user">
+			<button type="submit" name="method" value="invite">Invite</button>
+		</form>
 
 	<?php } else { ?>
 		<p>Please select el group</p>
