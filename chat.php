@@ -40,3 +40,15 @@
 <script src="./js/chat.js"></script>
 
 <br><button onclick="window.location = './groups.php'">Bak</button>
+
+<ul>
+    <?php
+        foreach ($members as $member) {
+            if (!$member['accept']) {
+    ?>
+                <li><?= $member['user'] ?></li>
+    <?php
+            }
+        }
+    ?>
+</ul>
