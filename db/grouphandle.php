@@ -33,6 +33,12 @@
 		foreach ($fetch as $msg) {
 			$api .= $msg['cont'] . '§§';
 		}
+	} else if ($_POST['method'] == 'invite') {
+		sql(false, 'INSERT INTO invite(by, user) VALUES(:BY, :USER);', [
+			'BY' => $_POST['group'],
+			'USER' => $_POST['user']
+		]);
+		header('location: ./../settings.php');
 	} else if ($_POST['method'] == 'promo') {
 		sql(false, 'UPDATE invite SET co = TRUE WHERE by = :BY AND user = :USER;', [
 			'BY' => $_POST['group'],
